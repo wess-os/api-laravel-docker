@@ -1,13 +1,13 @@
 ## How to configure
 - configure .env file
     - remember to change the database information
-- docker compose up -d db
+    docker compose up -d db
 - docker compose build
 - docker compose up
 - docker exec laravelapp php artisan migrate
 
 ## obs
-    - add Accept application/json to the request header in Postman, insomnia, etc.
+    add Accept application/json to the request header in Postman, insomnia, etc.
 
 ## Routes
 - GET "api/posts" -- list all posts
