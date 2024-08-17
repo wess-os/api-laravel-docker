@@ -3,7 +3,7 @@ version: "3.9"
 services:
   laravelapp:
     container_name: laravelapp
-    image: wess-os/laravelapp:1.0.4
+    image: wess-os/laravelapp:1.0.0
     build: .
     ports:
       - "8000:8000"
@@ -16,7 +16,7 @@ services:
     container_name: db
     image: postgres:12
     ports:
-      - "5435:5432"
+      - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
