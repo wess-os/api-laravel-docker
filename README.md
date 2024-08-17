@@ -9,6 +9,7 @@
 - add Accept application/json to the request header in Postman, insomnia, etc.
 ![Texto alternativo](public/example-postman.png)
 - Remember to add token in the Auth(Bearer token).
+![Texto alternativo](public/example-postman-02.png)
 
 ## Routes
 - GET "api/places" -- list all places
