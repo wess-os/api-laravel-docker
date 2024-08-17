@@ -19,7 +19,7 @@ class AuthController extends Controller
 
         $user = User::create($fields);
 
-        $token = $user->createToken($request->name);
+        $token = $user->createToken($request->email);
 
         return response()->json([
             'message' => 'succesfully registered', 
@@ -45,7 +45,7 @@ class AuthController extends Controller
             return response()->json(['message' => 'Invalid email or password'], 401);
         }
 
-        $token = $user->createToken($request->name);
+        $token = $user->createToken($request->email);
 
         return response()->json([
             'message' => 'succesfully logged in',
