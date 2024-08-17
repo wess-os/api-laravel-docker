@@ -7,7 +7,7 @@
     docker exec laravelapp php artisan migrate
 ## obs
 - add Accept application/json to the request header in Postman, insomnia, etc.
-![imagem](https://drive.google.com/file/d/1QvXdMof0vFAXj5YylmAMbEcfH0XkTcrN/view)
+![Texto alternativo](public/example-postman.png)
 - Remember to add token in the Auth(Bearer token).
 
 ## Routes
