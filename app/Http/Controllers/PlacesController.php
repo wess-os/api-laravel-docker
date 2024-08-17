@@ -23,8 +23,8 @@ class PlacesController extends Controller implements HasMiddleware
     public function index()
     {
         return response()->json([
-            "message"=>"List of all places", 
-            "data" => Place::all()
+            "message" => "List of all places", 
+            "data" => Place::orderBy('name')->get()
         ], 200);
     }
 
