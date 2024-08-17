@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use App\Models\Post;
+use App\Models\Place;
 
 class User extends Authenticatable
 {
@@ -47,8 +47,8 @@ class User extends Authenticatable
         ];
     }
 
-    public function posts()
+    public function places()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Place::class);
     }
 }
