@@ -38,7 +38,7 @@ class PlacesController extends Controller implements HasMiddleware
             'state' => 'required|max:255',
         ]);
 
-        $place = $request->user()->places()->create($fields);
+        $place = Place::create($fields);
 
         return response()->json([
             "message"=>"The place was created", 
